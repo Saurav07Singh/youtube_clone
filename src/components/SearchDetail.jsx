@@ -15,7 +15,6 @@ const SearchDetail = () => {
   useEffect(()=>{
     fetchFromApi(`search?part=snippet&q=${searchTerm}`)
     .then(data=>
-      //console.log(data.items)
        setVideosData(data.items)
     
       )
